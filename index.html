@@ -1,0 +1,24 @@
+// Pedir al usuario que ingrese las coordenadas x e y
+var x = parseInt(prompt("Ingrese la coordenada x:"));
+var y = parseInt(prompt("Ingrese la coordenada y:"));
+
+// Verificar en qué cuadrante se encuentra el punto
+if (x > 0 && y > 0) {
+    console.log("El punto se encuentra en el 1er cuadrante.");
+} else if (x < 0 && y > 0) {
+    console.log("El punto se encuentra en el 2do cuadrante.");
+} else if (x < 0 && y < 0) {
+    console.log("El punto se encuentra en el 3er cuadrante.");
+} else if (x > 0 && y < 0) {
+    console.log("El punto se encuentra en el 4to cuadrante.");
+} else if (x === 0 && y === 0) {
+    console.log("El punto se encuentra en el origen.");
+} else if (x === 0) {
+    console.log("El punto se encuentra sobre el eje Y.");
+} else if (y === 0) {
+    console.log("El punto se encuentra sobre el eje X.");
+} else {
+    console.log("El punto se encuentra en una posición indeterminada.");
+}
+
+
